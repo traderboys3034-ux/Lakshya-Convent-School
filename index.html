@@ -21,35 +21,68 @@
 {"@context":"https://schema.org","@type":"School","name":"Lakshya Convent School","description":"Best Play School & Convent Education from Play Group to Class VIII","url":"https://lakshyaconventschool.com""geo":{"@type":"GeoCoordinates","latitude":"24.8867","longitude":"85.5432"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"14:00"}],"founder":{"@type":"Person","name":"Soni Kumari"}}
 </script>
 <style>
-:root{--rb:#1B3A6B;--rbl:#2A5298;--rbd:#0F1F3D;--rbs:#E8F0FE;--w:#FFFFFF;--y:#FFD700;--yl:#FFF8DC;--g:#4CAF50;--gl:#E8F5E9;--b:#1A1A2E;--gr:#6B7280;--grl:#F3F4F6;--sh:0 10px 40px rgba(27,58,107,0.12);--shh:0 20px 60px rgba(27,58,107,0.2)}
-*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Poppins',sans-serif;background:var(--w);color:var(--b);overflow-x:hidden;line-height:1.6}
-::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:var(--grl)}::-webkit-scrollbar-thumb{background:var(--rb);border-radius:4px}
-@keyframes fIU{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fI{from{opacity:0}to{opacity:1}}
-@keyframes sI{from{opacity:0;transform:scale(0.8)}to{opacity:1;transform:scale(1)}}
-@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}
-@keyframes pg{0%,100%{box-shadow:0 0 20px rgba(255,215,0,0.3)}50%{box-shadow:0 0 40px rgba(255,215,0,0.6)}}
-@keyframes sh{0%{background-position:-200% center}100%{background-position:200% center}}
-@keyframes gs{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
-@keyframes rs{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-@keyframes mq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-@keyframes ld{0%{width:0}100%{width:100%}}
-@keyframes bc{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-.aos{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.16,1,.3,1)}.aos.v{opacity:1;transform:translateY(0)}
+  <header class="header">
+  <div class="logo-section">
+    <img src="images/logo.png" alt="School Logo">
 
-/* Loading */
-.ls{position:fixed;inset:0;background:var(--rb);z-index:10000;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .6s,visibility .6s}.ls.h{opacity:0;visibility:hidden}
-.ll{width:100px;height:100px;background:var(--w);border-radius:24px;display:flex;align-items:center;justify-content:center;margin-bottom:24px;animation:sI .6s;box-shadow:0 10px 40px rgba(0,0,0,.2)}.ll svg{width:60px;height:60px}
-.lt{font-family:'Playfair Display',serif;font-size:28px;font-weight:800;color:var(--w);margin-bottom:8px}
-.ltg{font-size:14px;color:var(--y);margin-bottom:24px;font-weight:500}
-.lb{width:200px;height:4px;background:rgba(255,255,255,.2);border-radius:4px;overflow:hidden}
-.lbi{height:100%;background:linear-gradient(90deg,var(--y),var(--w),var(--y));background-size:200% auto;border-radius:4px;animation:ld 1.5s ease-in-out forwards,gs 2s ease infinite}
+    <div class="school-text">
+      <h2>LAKSHYA</h2>
+      <h3>CONVENT SCHOOL</h3>
+      <p>With Play School</p>
+    </div>
+  </div>
 
-/* Top Bar */
-.tb{background:var(--rb);padding:8px 0;font-size:12px;position:relative;z-index:1001}
-.tb .c{max-width:1400px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-.tbl{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
-.tbi{display:flex;align-items:center;gap:6px;color:rgba(255,255,255,.9);font-size:12px}
+  <button class="menu-btn">&#9776;</button>
+</header>
+  .header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo-section{
+  display:flex;
+  align-items:center;
+}
+
+.logo-section img{
+  width:65px;
+  height:65px;
+  margin-right:12px;
+}
+
+.school-text h2{
+  margin:0;
+  color:#0d2c6c;
+  font-size:28px;
+  font-weight:700;
+}
+
+.school-text h3{
+  margin:2px 0;
+  color:#0d2c6c;
+  font-size:16px;
+}
+
+.school-text p{
+  margin:0;
+  color:#f4b400;
+  font-weight:600;
+}
+
+.menu-btn{
+  background:none;
+  border:none;
+  font-size:32px;
+  cursor:pointer;
+}
+
 .tbi span{font-size:14px}.tbi a{color:rgba(255,255,255,.9);text-decoration:none;transition:color .3s}.tbi a:hover{color:var(--y)}
 .tbr{display:flex;gap:12px}
 .tbb{padding:6px 16px;border-radius:50px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer;border:none;text-decoration:none;transition:all .3s}
