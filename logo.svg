@@ -1,0 +1,279 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <!-- Definitions for Gradients and Filters -->
+  <defs>
+    <!-- Premium Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#AA820A" />
+      <stop offset="30%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#F3E5AB" />
+      <stop offset="100%" stop-color="#AA820A" />
+    </linearGradient>
+
+    <!-- Deep Royal Blue Gradient -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#082D6C" />
+      <stop offset="50%" stop-color="#0B3D91" />
+      <stop offset="100%" stop-color="#1E4E9F" />
+    </linearGradient>
+
+    <!-- Bright Flame Gradient -->
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#FF5722" />
+      <stop offset="60%" stop-color="#FFC107" />
+      <stop offset="100%" stop-color="#FFEB3B" />
+    </linearGradient>
+
+    <!-- Shadow Filter for Depth -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#082D6C" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <style>
+    .gold-stroke { stroke: url(#goldGrad); fill: none; }
+    .gold-fill { fill: url(#goldGrad); }
+    .blue-stroke { stroke: #0B3D91; fill: none; }
+    .blue-fill { fill: #0B3D91; }
+    .flame-fill { fill: url(#flameGrad); }
+    .white-fill { fill: #FFFFFF; }
+    .green-fill { fill: #15803D; }
+    
+    .font-serif-bold { font-family: 'Playfair Display', 'Georgia', serif; font-weight: 800; }
+    .font-sans-bold { font-family: 'Inter', 'Helvetica', sans-serif; font-weight: 700; }
+    .font-sans-medium { font-family: 'Inter', 'Helvetica', sans-serif; font-weight: 500; }
+  </style>
+
+  <!-- Group with Shadow Filter -->
+  <g filter="url(#dropShadow)">
+    
+    <!-- ========================================== -->
+    <!-- 1. LAUREL WREATH (LEFT & RIGHT) -->
+    <!-- ========================================== -->
+    <g class="blue-fill" opacity="0.95">
+      <!-- Left Laurel Wreath Branch -->
+      <path d="M 190,470 C 185,465 170,440 178,410 C 180,400 190,395 198,405 C 205,415 200,435 190,470 Z" />
+      <path d="M 175,410 C 168,405 152,380 162,350 C 165,340 175,335 182,345 C 190,355 185,375 175,410 Z" />
+      <path d="M 165,350 C 158,345 142,320 152,290 C 155,280 165,275 172,285 C 180,295 175,315 165,350 Z" />
+      <path d="M 160,290 C 153,285 138,260 148,230 C 151,220 161,215 168,225 C 176,235 171,255 160,290 Z" />
+      <path d="M 162,230 C 155,225 142,200 152,170 C 155,160 165,155 172,165 C 180,175 175,195 162,230 Z" />
+      <path d="M 172,172 C 165,167 155,142 165,115 C 168,105 178,100 185,110 C 192,120 186,140 172,172 Z" />
+      <path d="M 190,120 C 183,115 175,90 188,65 C 192,58 200,55 206,65 C 212,75 205,95 190,120 Z" />
+
+      <!-- Left inner support branch stem -->
+      <path d="M 230,510 Q 140,400 210,100" fill="none" stroke="#0B3D91" stroke-width="6" stroke-linecap="round" />
+
+      <!-- Right Laurel Wreath Branch -->
+      <path d="M 810,470 C 815,465 830,440 822,410 C 820,400 810,395 802,405 C 795,415 800,435 810,470 Z" />
+      <path d="M 825,410 C 832,405 848,380 838,350 C 835,340 825,335 818,345 C 810,355 815,375 825,410 Z" />
+      <path d="M 835,350 C 842,345 858,320 848,290 C 845,280 835,275 828,285 C 820,295 825,315 835,350 Z" />
+      <path d="M 840,290 C 847,285 862,260 852,230 C 849,220 839,215 832,225 C 824,235 829,255 840,290 Z" />
+      <path d="M 838,230 C 845,225 858,200 848,170 C 845,160 835,155 828,165 C 820,175 825,195 838,230 Z" />
+      <path d="M 828,172 C 835,167 845,142 835,115 C 832,105 822,100 815,110 C 808,120 814,140 828,172 Z" />
+      <path d="M 810,120 C 817,115 825,90 812,65 C 808,58 800,55 794,65 C 788,75 795,95 810,120 Z" />
+
+      <!-- Right inner support branch stem -->
+      <path d="M 770,510 Q 860,400 790,100" fill="none" stroke="#0B3D91" stroke-width="6" stroke-linecap="round" />
+    </g>
+
+
+    <!-- ========================================== -->
+    <!-- 2. MAIN SHIELD (CENTRAL) -->
+    <!-- ========================================== -->
+    <!-- Outer Shield Shadow/Glow -->
+    <path d="M 500,70 Q 710,70 710,270 C 710,430 500,530 500,545 C 500,530 290,430 290,270 Q 290,70 500,70 Z" class="gold-fill" />
+    
+    <!-- White Shield Inner Body -->
+    <path d="M 500,85 Q 695,85 695,270 C 695,420 500,515 500,530 C 500,515 305,420 305,270 Q 305,85 500,85 Z" class="white-fill" />
+
+    <!-- Thin Royal Blue Inner Border -->
+    <path d="M 500,95 Q 680,95 680,270 C 680,410 500,500 500,515 C 500,500 320,410 320,270 Q 320,95 500,95 Z" fill="none" stroke="#0B3D91" stroke-width="5" />
+
+
+    <!-- ========================================== -->
+    <!-- 3. TORCH OF LEARNING & LIGHT RAYS -->
+    <!-- ========================================== -->
+    <!-- Radiant Sun Rays inside top portion of Shield -->
+    <g stroke="url(#goldGrad)" stroke-width="3.5" stroke-linecap="round" opacity="0.8">
+      <line x1="500" y1="200" x2="500" y2="120" />
+      <line x1="500" y1="200" x2="430" y2="135" />
+      <line x1="500" y1="200" x2="570" y2="135" />
+      <line x1="500" y1="200" x2="375" y2="165" />
+      <line x1="500" y1="200" x2="625" y2="165" />
+      <line x1="500" y1="200" x2="345" y2="215" />
+      <line x1="500" y1="200" x2="655" y2="215" />
+    </g>
+
+    <!-- Torch Base & Handle -->
+    <path d="M 488,270 L 512,270 L 506,325 L 494,325 Z" class="blue-fill" />
+    <!-- Torch Ribbon/Embellishment on handle -->
+    <rect x="492" y="295" width="16" height="5" class="gold-fill" rx="1" />
+    
+    <!-- Torch Holder Cup -->
+    <path d="M 475,255 L 525,255 L 518,272 L 482,272 Z" class="blue-fill" />
+    <path d="M 475,255 Q 500,265 525,255 L 525,250 L 475,250 Z" class="gold-fill" />
+
+    <!-- Majestic Flame -->
+    <!-- Outer Flame -->
+    <path d="M 500,165 C 520,185 530,210 525,230 C 522,242 510,248 500,248 C 490,248 478,242 475,230 C 470,210 480,185 500,165 Z" class="flame-fill" />
+    <!-- Inner Flame Glow -->
+    <path d="M 500,185 C 512,198 518,212 515,225 C 513,232 507,236 500,236 C 493,236 487,232 485,225 C 482,212 488,198 500,185 Z" fill="#FFEB3B" />
+
+
+    <!-- ========================================== -->
+    <!-- 4. THE OPEN BOOK (KNOWLEDGE) -->
+    <!-- ========================================== -->
+    <g class="blue-fill" transform="translate(0, 15)">
+      <!-- Left Page Background Shadow -->
+      <path d="M 500,320 Q 425,290 350,320 L 350,260 Q 425,230 500,260 Z" opacity="0.15" />
+      <!-- Right Page Background Shadow -->
+      <path d="M 500,320 Q 575,290 650,320 L 650,260 Q 575,230 500,260 Z" opacity="0.15" />
+
+      <!-- Left Page Border & Structure -->
+      <path d="M 495,310 Q 420,285 345,310 L 345,248 Q 420,223 495,248 Z" fill="#FFFFFF" stroke="#0B3D91" stroke-width="4.5" stroke-linejoin="round" />
+      <!-- Right Page Border & Structure -->
+      <path d="M 505,310 Q 580,285 655,310 L 655,248 Q 580,223 505,248 Z" fill="#FFFFFF" stroke="#0B3D91" stroke-width="4.5" stroke-linejoin="round" />
+
+      <!-- Left Book Spine/Center Shadow -->
+      <path d="M 495,248 L 495,310 Q 500,314 505,310 L 505,248 Z" class="gold-fill" />
+
+      <!-- Page Lines (Left) -->
+      <path d="M 365,265 Q 415,247 475,262" fill="none" stroke="#082D6C" stroke-width="2.5" opacity="0.8" />
+      <path d="M 365,280 Q 415,262 475,277" fill="none" stroke="#082D6C" stroke-width="2.5" opacity="0.8" />
+      <path d="M 365,295 Q 415,277 475,292" fill="none" stroke="#082D6C" stroke-width="2.5" opacity="0.8" />
+
+      <!-- Page Lines (Right) -->
+      <path d="M 635,265 Q 585,247 525,262" fill="none" stroke="#082D6C" stroke-width="2.5" opacity="0.8" />
+      <path d="M 635,280 Q 585,262 525,277" fill="none" stroke="#082D6C" stroke-width="2.5" opacity="0.8" />
+      <path d="M 635,295 Q 585,277 525,292" fill="none" stroke="#082D6C" stroke-width="2.5" opacity="0.8" />
+    </g>
+
+
+    <!-- ========================================== -->
+    <!-- 5. STYLIZED STUDENTS (HOLISTIC GROWTH) -->
+    <!-- ========================================== -->
+    <!-- Center Student (Deep Blue) -->
+    <g class="blue-fill" transform="translate(0, 10)">
+      <circle cx="500" cy="380" r="14" />
+      <path d="M 500,396 C 485,396 465,410 455,422 C 452,425 455,428 459,425 C 472,415 485,406 500,406 C 515,406 528,415 541,425 C 545,428 548,425 545,422 C 535,410 515,396 500,396 Z" />
+      <path d="M 488,405 L 512,405 L 507,465 L 493,465 Z" />
+    </g>
+
+    <!-- Left Student (Premium Gold) -->
+    <g class="gold-fill" transform="translate(0, 10)">
+      <circle cx="435" cy="400" r="11" />
+      <path d="M 435,413 C 423,413 408,425 400,435 C 398,437 400,440 403,437 C 413,429 423,422 435,422 C 447,422 457,429 467,437 C 470,440 472,437 470,435 C 462,425 447,413 435,413 Z" />
+      <path d="M 426,420 L 444,420 L 440,465 L 430,465 Z" />
+    </g>
+
+    <!-- Right Student (Premium Gold) -->
+    <g class="gold-fill" transform="translate(0, 10)">
+      <circle cx="565" cy="400" r="11" />
+      <path d="M 565,413 C 553,413 538,425 530,435 C 528,437 530,440 533,437 C 543,429 553,422 565,422 C 577,422 587,429 597,437 C 600,440 602,437 600,435 C 592,425 577,413 565,413 Z" />
+      <path d="M 556,420 L 574,420 L 570,465 L 560,465 Z" />
+    </g>
+
+
+    <!-- ========================================== -->
+    <!-- 6. FIVE-POINT STAR -->
+    <!-- ========================================== -->
+    <polygon points="500,488 505,502 519,502 508,511 512,525 500,516 488,525 492,511 481,502 495,502" class="blue-fill" />
+
+
+    <!-- ========================================== -->
+    <!-- 7. DRAPED BANNER (LAKSHYA CONVENT SCHOOL) -->
+    <!-- ========================================== -->
+    <!-- Left Ribbon Fold -->
+    <path d="M 120,580 L 220,530 L 220,625 L 120,640 L 150,610 Z" fill="#082D6C" stroke="url(#goldGrad)" stroke-width="4.5" />
+    
+    <!-- Right Ribbon Fold -->
+    <path d="M 880,580 L 780,530 L 780,625 L 880,640 L 850,610 Z" fill="#082D6C" stroke="url(#goldGrad)" stroke-width="4.5" />
+
+    <!-- Ribbon Connectors -->
+    <polygon points="220,610 250,555 220,530" fill="#AA820A" />
+    <polygon points="780,610 750,555 780,530" fill="#AA820A" />
+
+    <!-- Central Ribbon Body (White / Gold Framed) -->
+    <path d="M 180,570 Q 500,520 820,570 L 800,660 Q 500,610 200,660 Z" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="6" />
+    <path d="M 190,578 Q 500,530 810,578 L 793,648 Q 500,600 207,648 Z" fill="none" stroke="#0B3D91" stroke-width="2" />
+
+    <!-- Logo Headline Text inside Ribbon -->
+    <text x="500" y="622" class="font-serif-bold blue-fill" font-size="52" tracking-wider="3" text-anchor="middle">LAKSHYA CONVENT</text>
+    <text x="500" y="650" class="font-sans-bold blue-fill" font-size="24" letter-spacing="8" text-anchor="middle">SCHOOL</text>
+
+
+    <!-- ========================================== -->
+    <!-- 8. MOTTO LINE -->
+    <!-- ========================================== -->
+    <text x="500" y="700" class="font-sans-bold" font-size="22" letter-spacing="6" fill="#0B3D91" text-anchor="middle">
+      <tspan class="gold-fill">LEARN</tspan>  •  <tspan class="gold-fill">LEAD</tspan>  •  <tspan class="gold-fill">SUCCEED</tspan>
+    </text>
+    <line x1="280" y1="712" x2="720" y2="712" stroke="url(#goldGrad)" stroke-width="2.5" />
+
+
+    <!-- ========================================== -->
+    <!-- 9. THREE SUB-COLUMNS (VALUES) -->
+    <!-- ========================================== -->
+    <!-- Left Column: Education for Excellence -->
+    <g transform="translate(180, 725)">
+      <!-- Open Book Icon -->
+      <path d="M 30,10 Q 50,0 70,10 L 70,40 Q 50,30 30,40 Z" fill="none" stroke="#0B3D91" stroke-width="3.5" />
+      <path d="M 70,10 Q 90,0 110,10 L 110,40 Q 90,30 70,40 Z" fill="none" stroke="#0B3D91" stroke-width="3.5" />
+      <line x1="70" y1="10" x2="70" y2="40" stroke="#0B3D91" stroke-width="3.5" />
+      <!-- Text -->
+      <text x="70" y="60" class="font-sans-bold blue-fill" font-size="14" text-anchor="middle">EDUCATION</text>
+      <text x="70" y="75" class="font-sans-medium" font-size="12" fill="#555" text-anchor="middle">FOR EXCELLENCE</text>
+    </g>
+
+    <!-- Center Separator -->
+    <line x1="390" y1="735" x2="390" y2="795" stroke="#E2E8F0" stroke-width="2" />
+
+    <!-- Center Column: Discipline for Character -->
+    <g transform="translate(425, 722)">
+      <!-- Fountain Pen Nib Icon -->
+      <path d="M 75,10 L 90,35 L 82,45 L 68,45 L 60,35 Z" fill="none" stroke="#D4AF37" stroke-width="3" />
+      <path d="M 75,10 L 75,32" stroke="#0B3D91" stroke-width="3" />
+      <circle cx="75" cy="32" r="3" class="blue-fill" />
+      <!-- Text -->
+      <text x="75" y="63" class="font-sans-bold blue-fill" font-size="14" text-anchor="middle">DISCIPLINE</text>
+      <text x="75" y="78" class="font-sans-medium" font-size="12" fill="#555" text-anchor="middle">FOR CHARACTER</text>
+    </g>
+
+    <!-- Right Separator -->
+    <line x1="610" y1="735" x2="610" y2="795" stroke="#E2E8F0" stroke-width="2" />
+
+    <!-- Right Column: Values for Life -->
+    <g transform="translate(650, 722)">
+      <!-- Detailed Green Tree Icon -->
+      <path d="M 65,45 Q 65,35 75,35 Q 85,35 85,45 Z" class="green-fill" />
+      <!-- Tree Canopy Cloud Shapes -->
+      <circle cx="62" cy="30" r="12" class="green-fill" />
+      <circle cx="75" cy="20" r="14" class="green-fill" />
+      <circle cx="88" cy="30" r="12" class="green-fill" />
+      <circle cx="75" cy="32" r="11" class="green-fill" />
+      <!-- Trunk -->
+      <rect x="72" y="38" width="6" height="10" fill="#8B4513" />
+      <!-- Text -->
+      <text x="75" y="63" class="font-sans-bold blue-fill" font-size="14" text-anchor="middle">VALUES</text>
+      <text x="75" y="78" class="font-sans-medium" font-size="12" fill="#555" text-anchor="middle">FOR LIFE</text>
+    </g>
+
+
+    <!-- ========================================== -->
+    <!-- 10. ADDRESS BADGE (BASE CAPSULE) -->
+    <!-- ========================================== -->
+    <g transform="translate(0, 825)">
+      <!-- Capsule Background -->
+      <rect x="180" y="0" width="640" height="42" rx="21" class="blue-fill" stroke="url(#goldGrad)" stroke-width="3" />
+      
+      <!-- Inner text decoration stars -->
+      <polygon points="205,16 208,21 213,21 209,25 211,30 205,27 199,30 201,25 197,21 202,21" class="gold-fill" />
+      <polygon points="795,16 798,21 803,21 799,25 801,30 795,27 789,30 791,25 787,21 792,21" class="gold-fill" />
+
+      <!-- Official Address Text -->
+      <text x="500" y="26" class="font-sans-bold" font-size="14.5" fill="#FFFFFF" letter-spacing="1.5" text-anchor="middle">
+        MAIN ROAD, JAGJIVAN NAGAR, RAJAULI • NAWADA • BIHAR
+      </text>
+    </g>
+
+  </g>
+</svg>
