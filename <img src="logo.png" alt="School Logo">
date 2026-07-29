@@ -66,3 +66,4 @@ export const SchoolLogo: React.FC<SchoolLogoProps> = ({
     </div>
   );
 };
+<img src="images/logo.png" alt="Lakshya Convent School Logo" />
